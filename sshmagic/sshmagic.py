@@ -27,8 +27,3 @@ def ssh(line, cell):
     if ret[1]:
         print(f"\x1b[31m{ret[1].decode('utf8')}\x1b[0m")
     return print(ans)
-
-
-def load_ipython_extension(ipython):
-    """ Register ssh magics """
-    ipython.register_magic_function(ssh, 'cell')
