@@ -1,7 +1,32 @@
 # SSHMagic
 SSH magic function for ipython.
 
-Allows to execute commands on a remote machine via ssh. Requires a password less access to the remote machine.
+Allows to execute commands on a remote machine via ```ssh```. Requires a password-less access to the remote machine.
+
+## Usage
+Load the extension with
+```
+%%load_ext sshmagic
+```
+To execute some commands on the remote host, for example ```remote.host.com``` as user ```alice``` use:
+```
+%ssh alice@remote.host.com
+pwd
+ls
+```
+Note: this requires that the user executing this command has a SSH key-based authentifcation for the account ```alice``` setup.
+
+## Installation
+Create a local clone of this repository and in the root directory of the cloned code run:
+```
+pip install .
+```
+
+## Uninstall
+Use
+```
+pip uninstall sshmagic
+```
 
 ## Configure SSH Key-Based Authentication
 
