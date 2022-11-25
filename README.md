@@ -6,7 +6,7 @@ Allows to execute commands on a remote machine via ```ssh```. Requires a passwor
 ## Usage
 Load the extension with
 ```
-%%load_ext sshmagic
+%load_ext sshmagic
 ```
 To execute some commands on the remote host, for example ```remote.host.com``` as user ```alice``` use:
 ```
