@@ -10,7 +10,7 @@ Load the extension with
 ```
 To execute some commands on the remote host, for example ```remote.host.com``` as user ```alice``` use:
 ```
-%ssh alice@remote.host.com
+%%ssh alice@remote.host.com
 pwd
 ls
 ```
